@@ -1,0 +1,33 @@
+
+
+body{
+  line-height: 2.2;
+}
+.title1 h2 {
+     font-weight: bold;
+    text-align: center;
+    border-width: 2px 73px 2px 73px;
+    border-style: solid;
+    padding: 26px 15px 26px 57px;
+    border-radius: 37px;
+    border-color: #bfa8e8;
+    width: 100%;
+    color:#bfa8e8;
+}
+.cart{
+    background: none repeat scroll 0 0 #f4f4f4;
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+.giaohang .table{
+  padding-left: 17vh;
+
+}
+.btn btn-danger btn-sm{
+  padding-left: 30vh;
+}
+
+.theloai{
+  width: 15%;
+}

@@ -1,0 +1,44 @@
+.title1{
+	background: #6C95D0;
+}
+.title1 h2 {
+  font-family: raleway;
+  font-size: 50px;
+  font-weight: 200px;
+  margin: 0;
+  padding: 50px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.container .info ins{
+  text-decoration: none;
+  font-weight: 30px;
+    font-size: 18px;
+    color: blue;
+
+}
+.container h2{
+  font-size: 20px;
+}
+.container .button{
+  width: 50%;
+  height:6vh;
+  padding-top: 7px;
+  border-color: #5a88ca;
+  background-color: #5a88ca;
+}
+.container .button a{
+  top: 30%;
+  color: #fff;    
+  text-decoration:none;
+}
+.container .button:hover{
+  background-color: #2ba78b;
+}
+.container .rows{
+  display: flex;
+  width: 80%;
+  text-align: center;
+}
+  

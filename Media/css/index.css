@@ -1,0 +1,340 @@
+.content {width:80%;position:relative;margin:0 auto;padding: 0;}
+
+.liveshow{
+    border:none;
+    width: 100%;
+}
+.liveshow ul li{
+    list-style: none;
+}
+.liveshow .bx-pager{
+    display: none;
+}
+.content .prev,
+.liveshow .next{
+    width: 32px;
+    height: 32px;
+    border: 1px solid #eaeaea;
+    text-align: center;
+    display: block;
+    border-radius: 50%;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    line-height: 29px;
+    -moz-transition: all 0.45s ease;
+    -webkit-transition: all 0.45s ease;
+    -o-transition: all 0.45s ease;
+    -ms-transition: all 0.45s ease;
+    transition: all 0.45s ease;
+}
+.liveshow img{
+    width: 100%;
+    height: auto;
+}
+.liveshow .prev{
+    left: 0px;
+    padding-right: 3px;
+}
+.liveshow .next{
+    right: 0px;
+    padding-left: 3px;
+}
+.liveshow:hover .prev{
+    left: 10px;
+}
+.liveshow:hover .next{
+    right: 10px;
+}
+.liveshow .prev:hover,
+.liveshow .next:hover{
+    background: #5a88ca;
+    color: #fff;
+    border-color: #5a88ca;
+}
+
+/*------------------
+[4. Slidershow]
+------------------*/
+
+.liveshow .bx-pager{
+    display: block;
+    text-align: center;
+}
+.liveshow .bx-pager-item{
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    font-size: 0;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 3px;
+}
+.liveshow .bx-pager-item a{
+    width: 100%;
+    height: 100%;
+    background: #999;
+    display: block;
+    border-radius: 50%;
+}
+.liveshow .bx-pager-item a.active{
+    background: #1bd172;
+}
+.liveshow .caption-group{
+    position: absolute;
+    top: 26%;
+    right: 16%;
+}
+.liveshow .caption-group .title{
+    margin: 0;
+}
+.liveshow .caption-group .subtitle{
+    margin: 0;
+    margin-top: 5px;
+}
+.liveshow .caption-group .button-radius{
+    margin-top: 27px;
+}
+.liveshow .caption-group .key{
+    color: #1bd172;
+}
+.liveshow .caption-group .caption{
+
+}
+
+/* css của live show*/
+.button-radius{
+  position: relative;
+  border: 1px solid #eaeaea;
+  padding: 1px;
+  min-height: 34px;
+  background: #fff;
+  display: inline-block;
+  width: auto;
+  line-height: 30px;
+  padding-left: 40px;
+  padding-right: 20px;
+  margin: 0;
+  color: #666666;
+  -webkit-border-radius: 17px;
+  -moz-border-radius: 17px;
+  border-radius: 17px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.button-radius .icon{
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  -ms-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  position: absolute;
+  left: 2%;
+  top: 2px;
+  overflow: hidden;
+}
+
+.button-radius .icon:before{
+  font-family: 'FontAwesome';
+  content: "\f105";
+  font-size: 14px;
+  color: #fff;
+  width: 28px;
+  height: 28px;
+  background-color: #5a88ca;
+  border-radius: 90%;
+  text-align: center;
+  line-height: 26px;
+  float: left;
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  -ms-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+.button-radius.white{
+  border-color: #fff;
+  color: #fff;
+  background: transparent;
+}
+.button-radius.white .icon:before{
+  background: #fff;
+  color: #333;
+}
+
+.button-radius:hover .icon{
+  left: 100%;
+  margin-left: -30px;
+}
+.button-radius:hover{
+  padding-left: 20px;
+  padding-right: 40px;
+}
+
+
+/*Phần Promotion*/
+.promotion {
+  background: #fff;
+  color: #fff;
+ 
+}
+
+ .promo{
+  font-size: 20px;
+  font-weight: bold;
+  padding: 18px 10px;
+  text-align: center;
+  margin: 5px;
+  border-radius: 35px;
+ }
+
+.promo i {
+  font-size: 50px;
+}
+
+.promo:hover {
+    color: #190707;
+    background: #A8B4E8;
+    
+    }
+.promo1 {
+    background: #B9D8FF;
+    }
+.promo2 {
+    background: #CAC6FF;
+    }
+.promo3 {
+    background: #BFA8E8;
+    }
+.promo4 {
+    background: #E5B9FF;
+    }
+/*hết Promotion*/
+
+
+
+.nsx{
+ 
+  background:#F5F5F5;
+}
+
+.container .info ins{
+  text-decoration: none;
+  font-weight: 30px;
+    font-size: 18px;
+    color:red;
+
+}
+.container h2{
+  font-size: 20px;
+}
+.container .button{
+  width: 47%;
+margin: 5px 1px;
+padding: 7px;
+border: 1px solid #bfa8e8;
+color:#bfa8e8;
+border-radius: 20px;
+  
+}
+.container .button a{
+  top: 30%;
+  color:black;
+  text-decoration:none;
+}
+.container .button:hover{
+color:white;
+  background-color:#bfa8e8;
+}
+.container .rows{
+  display: flex;
+  width: 100%;
+  text-align: center;
+margin: 5px;
+}
+/*Tiêu đề sản phẩm mới*/
+.new-products{
+	font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+ 
+  border-width: 2px 73px 2px 73px;
+  border-style: solid;
+  padding: 15px;
+  border-radius: 37px;
+  border-color: #bfa8e8;
+  color: #bfa8e8;
+  width: 100%;
+  content: "";
+  display: table;
+  clear: both;
+  margin:5% 0 5% ;
+	
+}
+/*Bổ sung ngày 15/3/2018 By Huy*/
+.btn-next{
+	
+	text-align: center;
+	padding: 5px;
+}
+.bntNxt{
+	background-color:#BFA8E8 ;
+	border-radius: 5px;
+	border: 1px solid #BFA8E8 ;
+	
+}
+.symbolNext{
+	border: 12px solid #fff;
+	background-color: white;
+}
+/*khung sản phẩm 
+ngày 16/3/2017
+by Trần Đình Huy*/
+.img
+{
+	
+	text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.thumbail:hover{
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+
+}
+.tuychon{
+  float:right;
+
+}
+.luachon,.bntchon{
+  background-color: gray;
+  
+  float: right;
+  font-size: 18px;
+}
+.luachon{
+  border-color:#bfa8e8;
+  border-style: solid;
+  border-width: 3px;
+
+ 
+}
+.bntchon{
+    background-color: #BFA8E8;
+    padding: 3px;
+    border: 0;
+}
+.bntchon:hover{
+  background-color: #cac6ff;
+}
+
+

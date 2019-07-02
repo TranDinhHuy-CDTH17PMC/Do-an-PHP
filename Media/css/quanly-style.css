@@ -1,0 +1,49 @@
+body{
+	margin: 0;
+	padding:0;
+	background-color: #D3D3D3;
+}
+.glyphicon { margin-right:10px; }
+.panel-body { padding:0px; }
+.panel-body table tr td { padding-left: 15px }
+.panel-body .table {margin-bottom: 0px; }
+.header-left{
+	display: flex;
+}
+.header-left .search-form{
+	padding-top: 25px;
+}
+.header-left .logo{
+	display: flex;
+	padding-right: 10px;
+}
+.header-left .logo h1{
+	padding-left: 10px;
+	color: blue;
+}
+.header{
+	display: flex;
+	background: #F5F5F5;
+}
+.header-right{
+	float: right;
+	padding-top: 10px;
+	padding-right: 20px;
+}
+.header-right a{
+	font-size: 17px;
+}
+.nav :hover a{
+	color: #000;
+}
+.nav>li>a:hover,
+.nav>li>a:focus,
+.nav .open>a,
+.nav .open>a:hover,
+.nav .open>a:focus {
+    background:blue;
+}
+.bg-lightgray{
+    background-color:LightGray;
+}
+
