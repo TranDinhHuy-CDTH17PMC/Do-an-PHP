@@ -12,23 +12,23 @@ So với việc tìm kiếm 1 cửa hàng với diện tích rộng, chi phí đ
 
 ![DEMO](img/diagram/2.png)
 ## Chức năng
--	Các yêu cầu chức năng
+- Các yêu cầu chức năng
 	- Đối với khách hàng:
-    * Tìm hiểu sản phẩm
-    *	Mua hàng
-  	* Đặt hàng
-    *	Đăng ký
-    *	Đăng nhập
-  - Đối với nhân viên:
-  	  * Sản phẩm
-	      * Thêm
-        *	Xóa
-        *	Sửa
+		- Tìm hiểu sản phẩm
+		- Mua hàng
+		- Đặt hàng
+		- Đăng ký
+		- Đăng nhập
+	- Đối với nhân viên:
+  	  	- Sản phẩm
+			- Thêm
+			- Xóa
+			- Sửa
   - Quản lý thông tin nhân viên:
     - Thêm mới thông tin nhân viên
     -	Xóa thông tin nhân viên
     -	Cập nhật thông tin nhân viên
-  -	Quản lý thông tin khách hàng:
+  -Quản lý thông tin khách hàng:
     -	Thêm mới thông tin khách hàng
     -	Xóa thông tin khách hàng
     -	Cập nhật thông tin khách hàng
@@ -41,7 +41,8 @@ So với việc tìm kiếm 1 cửa hàng với diện tích rộng, chi phí đ
     - Xóa danh mục
     -	Cập nhật danh mục
     -	Đăng nhập
-  -	Các yêu cầu phi chức năng
+    
+- Các yêu cầu phi chức năng
     -	Đối với khách hàng:
         -	Xem thông tin sản phẩm
         -	Xem trang chủ
