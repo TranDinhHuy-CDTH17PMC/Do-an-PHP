@@ -6,7 +6,9 @@ So với việc tìm kiếm 1 cửa hàng với diện tích rộng, chi phí đ
 
 ## Các mô hình được sữ dụng để thiết kế website
 + Use Case Diagram
+![DEMO](img/1.png)
 +	ERD
+![DEMO](img/diagram/2.png)
 +	Activity Diagram
 +	DFD
 ## Framwork được sữ dụng:
@@ -14,10 +16,23 @@ So với việc tìm kiếm 1 cửa hàng với diện tích rộng, chi phí đ
 +	Jquery của JavaScript để xữ lý một số hoạt động của website
 +	Sữ dụng PHP cho việc thao tác với dữ liệu với website
 ## Giao diện người dùng
-[1] img/demo/1.png "Trang chủ"
-[2] img/demo/2.png "Trang chủ"
-[3] img/demo/3.png "Trang chủ"
-[4] img/demo/4.png "Trang chủ"
-[5] img/demo/5.png "Trang chủ"
-[6] img/demo/6.png "Trang chủ"
-[7] img/demo/7.png "Trang chủ"
+![DEMO](img/demo/1.png)
+![DEMO](img/demo/2.png 
+![DEMO](img/demo/3.png) 
+![DEMO](img/demo/4.png) 
+![DEMO](img/demo/5.png) 
+![DEMO](img/demo/6.png) 
+![DEMO](img/demo/7.png) 
+![DEMO](img/demo/8.png)
+## Giao diện admin
+![DEMO](img/demo/9.png 
+![DEMO](img/demo/10.png) 
+![DEMO](img/demo/11.png) 
+![DEMO](img/demo/12.png) 
+![DEMO](img/demo/13.png) 
+![DEMO](img/demo/14.png) 
+![DEMO](img/demo/15.png)
+![DEMO](img/demo/16.png 
+![DEMO](img/demo/17.png) 
+![DEMO](img/demo/18.png) 
+
