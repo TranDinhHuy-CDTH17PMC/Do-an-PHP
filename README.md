@@ -11,11 +11,56 @@ So với việc tìm kiếm 1 cửa hàng với diện tích rộng, chi phí đ
 + ER Diagram
 
 ![DEMO](img/diagram/2.png)
-
-## Framwork được sữ dụng:
-+	Bootstrap 3 framwork của CSS: Dùng để thiết kế giao diện người dùng và Admin
-+	Jquery của JavaScript để xữ lý một số hoạt động của website
-+	Sữ dụng PHP cho việc thao tác với dữ liệu với website
+## Chức năng
+-	Các yêu cầu chức năng
+	- Đối với khách hàng:
+    * Tìm hiểu sản phẩm
+    *	Mua hàng
+  	* Đặt hàng
+    *	Đăng ký
+    *	Đăng nhập
+  - Đối với nhân viên:
+  	  * Sản phẩm
+	      * Thêm
+        *	Xóa
+        *	Sửa
+  - Quản lý thông tin nhân viên:
+    - Thêm mới thông tin nhân viên
+    -	Xóa thông tin nhân viên
+    -	Cập nhật thông tin nhân viên
+  -	Quản lý thông tin khách hàng:
+    -	Thêm mới thông tin khách hàng
+    -	Xóa thông tin khách hàng
+    -	Cập nhật thông tin khách hàng
+  - Quản lý hóa đơn:
+    -	Duyệt hóa đơn
+    -	Xóa hóa đơn
+    -	Cập nhật hóa đơn
+    -	Quản lý danh mục:
+    -	Thêm danh mục mới
+    - Xóa danh mục
+    -	Cập nhật danh mục
+    -	Đăng nhập
+  -	Các yêu cầu phi chức năng
+    -	Đối với khách hàng:
+        -	Xem thông tin sản phẩm
+        -	Xem trang chủ
+        -	Tìm kiểm sản phẩm
+        -	Bình luận
+        -	Đặt hàng
+        -	Xóa sản phẩm khỏi giỏi hàng
+        -	Cập nhật giỏ hàng
+        -	Thêm sản phẩm giỏi hàng
+    -	Đối với nhân viên:
+        -	Xem thông tin sản phẩm
+        -	Xem thông tin khách hàng
+        -	Tìm kiếm sản phẩm
+        -	Trả lời bình luận
+        -	Thêm mới hóa đơn
+        -	Cập nhật hóa đơn
+## Công nghệ được sữ dụng:
++	Front-End: Boostrap3(Framework CSS,	Jquery(Libary Javascript)
++	Back-End PHP7 
 ## Giao diện người dùng
 ![DEMO](img/demo/1.png)
 ![DEMO](img/demo/2.png 
