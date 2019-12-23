@@ -6,11 +6,11 @@ So với việc tìm kiếm 1 cửa hàng với diện tích rộng, chi phí đ
 
 ## Các mô hình được sữ dụng để thiết kế website
 + Use Case Diagram
-![DEMO](img/1.png)
-+	ERD
+![DEMO](img/diagram/1.jpg)
++ ERD
 ![DEMO](img/diagram/2.png)
-+	Activity Diagram
-+	DFD
++ Activity Diagram
++ DFD
 ## Framwork được sữ dụng:
 +	Bootstrap 3 framwork của CSS: Dùng để thiết kế giao diện người dùng và Admin
 +	Jquery của JavaScript để xữ lý một số hoạt động của website
