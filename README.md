@@ -4,11 +4,11 @@ Ngày nay, điện thoại thông minh trở thành 1 phần không thể thiế
 
 So với việc tìm kiếm 1 cửa hàng với diện tích rộng, chi phí đầu tư cơ sở vật chất cho cửa hàng, thuê nhân viên bán hàng, các chi phí phát sinh khác thì việc thiết kế website bán điện thoại di động rẻ và hiệu quả hơn hẳn. Ta chỉ cần đầu tư số vốn khá ít ỏi để thiết kế website và duy trì hàng năm thì những gì ta nhận được lớn hơn nhiều.
 
-## Các mô hình được sữ dụng để thiết kế website
-+ Use Case Diagram
+## Các Diagram được sữ dụng để thiết kế website
++ Use-case Diagram
 
 ![DEMO](img/diagram/1.jpg)
-+ ERD
++ ER Diagram
 
 ![DEMO](img/diagram/2.png)
 
