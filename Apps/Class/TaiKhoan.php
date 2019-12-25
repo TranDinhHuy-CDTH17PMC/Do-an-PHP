@@ -55,7 +55,7 @@ class TaiKhoan {
 	public
 	function capnhat_dulieu_vao_db() {
 		//Lệnh cập nhật tài khoản
-		$query_update = "UPDATE db_ghtshop.TAIKHOAN SET trangthai = '$this->trangthai',
+		$query_update = "UPDATE id12041544_db_ghtshop.TAIKHOAN SET trangthai = '$this->trangthai',
 		PASSWORD = '$this->password',email= '$this->email' WHERE  username = '$this->username'";
 		$db = new Database();
 		//Thực hiện truy vấn
@@ -89,7 +89,7 @@ class TaiKhoan {
 		$this->password = $_POST[ 'password' ];
 		$this->username = $_POST[ 'username' ];
 
-		$query_dangnhap = "select username,password,trangthai from db_ghtshop.taikhoan where username = '$this->username' and password = '$this->password'";
+		$query_dangnhap = "select username,password,trangthai from id12041544_db_ghtshop.taikhoan where username = '$this->username' and password = '$this->password'";
 		$db = new Database();
 		//Kiểm tra tồn tại của tài khoản trong cơ sở dữ liệu
 		$row = $db->thuchien_query( $query_dangnhap );
@@ -108,7 +108,7 @@ class TaiKhoan {
 			
 				$_SESSION[ 'admin' ] = $this->username;
 				unset($_SESSION['username']);
-				header( "Location: ../Admin/sanpham-them.php" );
+				header( "Location:Admin/sanpham-them.php" );
 		}
 		$tt = "Đăng nhập thành công";
 		unset($_SESSION['cart']);

@@ -24,7 +24,7 @@ try {
 		$soluong = addslashes($_POST['soluong']);
 		$giagoc = 0;//Giá gốc mặc định
 		
-		$query_giamoi = "select giamoi from db_ghtshop.chitietsp where masp=:masp";
+		$query_giamoi = "select giamoi from id12041544_db_ghtshop.chitietsp where masp=:masp";
 		$stmt = $pdo->prepare($query_giamoi);
 		$stmt->bindParam(':masp',$masp,PDO::PARAM_STR,255);
 		$stmt->execute();
@@ -42,7 +42,7 @@ try {
 			//Upload file ảnh nếu file ảnh mới
 			uploadFile('linkanh');
 			//Thực hiện truy vấn 
-			$sqlUpdate = "update db_ghtshop.chitietsp set linkanh =:linkanh, 
+			$sqlUpdate = "update id12041544_db_ghtshop.chitietsp set linkanh =:linkanh, 
 			tensp =:tensp,giagoc =:giagoc,giamoi =:giamoi,mancc =:mancc,maloai =:maloai,
 			soluong =:soluong where masp =:masp";
 			$data = $pdo->prepare( $sqlUpdate );

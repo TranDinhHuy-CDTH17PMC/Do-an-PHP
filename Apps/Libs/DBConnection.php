@@ -1,6 +1,6 @@
 <?php
 
-$connect = ( "mysql:host = localhost;dbname = db_ghtshop" );
+$connect = ( "mysql:host = localhost;dbname = id12041544_db_ghtshop" );
 $options = array(
 	PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES UTF8",
 	PDO::ATTR_ERRMODE =>PDO::ERRMODE_EXCEPTION

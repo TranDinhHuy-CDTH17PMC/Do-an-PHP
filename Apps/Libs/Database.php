@@ -70,7 +70,7 @@ class Database {
   /**
   *@see Chọn tất cả các cột của bảng được truyền vào */
 	function select_All($where = null) {
-        $query_select = "select * from db_ghtshop.$this->bang $where";
+        $query_select = "select * from id12041544_db_ghtshop.$this->bang $where";
         return $this->thuchien_query($query_select);
 
     }
@@ -86,7 +86,7 @@ class Database {
     *@return int
     */
     public function taoma_tudong($table){
-        $query = 'select count(*) as dem from db_ghtshop.'.$table.'';
+        $query = 'select count(*) as dem from id12041544_db_ghtshop.'.$table.'';
 		$d = $this->thuchien_query($query);
         $stt = $d[0]['dem'];
         return $stt + 1;
@@ -97,7 +97,7 @@ class Database {
             $tentruycap = $_SESSION['username'];
         }
         else{
-            $stt = $this->lay_mot_hang("select count(ten) as stt from db_ghtshop.truycap");
+            $stt = $this->lay_mot_hang("select count(ten) as stt from id12041544_db_ghtshop.truycap");
             $tentruycap = "Guest-".$stt['stt'];
         }
         

@@ -32,7 +32,7 @@ try {
 		$soluong = addslashes($_POST['soluong']);
 		$tenanh = $_FILES['linkanh']['name'];
 		//Gán giá cũ cho giá gốc
-		$query = "select count(masp) as stt,maloai from db_ghtshop.chitietsp where maloai = '$theloai'";
+		$query = "select count(masp) as stt,maloai from id12041544_db_ghtshop.chitietsp where maloai = '$theloai'";
 		$db = $pdo->prepare($query);
 		$db->execute();
 		$smst = $db->fetch();
@@ -46,7 +46,7 @@ try {
 			$error = 'Không được để trống thông tin';
 		} else if (!isset($error)) {
 			//Kiểm tra mã sản phẩm trong database
-			$sqlMasp = "Select masp from db_ghtshop.chitietsp where masp = '$masp'";
+			$sqlMasp = "Select masp from id12041544_db_ghtshop.chitietsp where masp = '$masp'";
 			$data_masp = $pdo->prepare($sqlMasp);
 			$data_masp->execute();
 			$msp = $data_masp->fetch();
@@ -57,7 +57,7 @@ try {
 				//Gọi phương thức Upload file
 				uploadFile($nameInput);
 				//Chuổi truy vấn SQL
-				$sqlInsert = "Insert into db_ghtshop.chitietsp (linkanh,tensp,giamoi,giagoc,masp,maloai,soluong,mancc) 
+				$sqlInsert = "Insert into id12041544_db_ghtshop.chitietsp (linkanh,tensp,giamoi,giagoc,masp,maloai,soluong,mancc) 
 					values (:linkanh,:tensp,:giamoi,:giagoc,:masp,:maloai,:soluong,:mancc)";
 				$data = $pdo->prepare($sqlInsert);
 				//bind giá trị cho Paramater

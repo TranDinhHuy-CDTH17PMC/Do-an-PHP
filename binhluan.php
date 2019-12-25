@@ -1,5 +1,5 @@
 <?php
-$connect = ( "mysql:host = localhost;dbname = db_ghtshop" );
+$connect = ( "mysql:host = localhost;dbname = id12041544_db_ghtshop" );
 $options = array(
 	PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES UTF8",
 	PDO::ATTR_ERRMODE =>PDO::ERRMODE_EXCEPTION
@@ -20,7 +20,7 @@ function thongbao($loaithongbao,$loinhan,$link = null){
           </div>';
 }
 function taoma_tudong($table,$pdo){
-    $query = 'select count(*) as dem from db_ghtshop.'.$table.'';
+    $query = 'select count(*) as dem from id12041544_db_ghtshop.'.$table.'';
     $stmt = $pdo->prepare($query);
     $stmt->execute();
     $d = $stmt->fetch();
@@ -32,7 +32,7 @@ if (isset($_POST['makh']) and isset($_POST['masp']) and isset($_POST['noidung'])
     $makh =$_POST['makh'];
     $noidung = $_POST['noidung'];
     $mabinhluan = taoma_tudong("binhluan",$pdo);
-    $sql_query = "Insert into db_ghtshop.binhluan(mabinhluan,makh,masp,noidung) values('$mabinhluan','$makh','$masp','$noidung')";
+    $sql_query = "Insert into id12041544_db_ghtshop.binhluan(mabinhluan,makh,masp,noidung) values('$mabinhluan','$makh','$masp','$noidung')";
     $stmt = $pdo->prepare($sql_query);
     /*$stmt->bindParam(":makh",$a);
     $stmt->bindParam(":masp",$b);
@@ -48,7 +48,7 @@ if (isset($_POST['makh']) and isset($_POST['masp']) and isset($_POST['noidung'])
 
 if(isset($_POST['masp'])){
     $masp = $_POST['masp'];
-    $sql_query = "Select * from db_ghtshop.binhluan where trangthai = 0 and masp = '$masp'  order by ngaygio desc";
+    $sql_query = "Select * from id12041544_db_ghtshop.binhluan where trangthai = 0 and masp = '$masp'  order by ngaygio desc";
     $stmt = $pdo->prepare($sql_query);
     $stmt->execute();
     $rows = $stmt->fetchAll();

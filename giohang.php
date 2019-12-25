@@ -5,19 +5,23 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>GHT</title>
-	<link rel="stylesheet" href="../Media/css/bootstrap.min.css">
-	<link rel="stylesheet" href="../Media/css/font-awesome.min.css">
-	<link rel="stylesheet" href="../Media/css/owl.carousel.css">
-	<link rel="stylesheet" href="../Media/css/responsive.css">
-	<link rel="stylesheet" href="../Media/css/style.css">
-	<link rel="stylesheet" href="../Media/css/giohang.css">
-	<?php include dirname(__FILE__) . "/../Apps/Class/SanPham.php";
-	require_once dirname(__FILE__) . "/../Apps/Libs/Database.php"; ?>
+	<link rel="stylesheet" href="Media/css/bootstrap.min.css">
+	<link rel="stylesheet" href="Media/css/font-awesome.min.css">
+	<link rel="stylesheet" href="Media/css/owl.carousel.css">
+	<link rel="stylesheet" href="Media/css/responsive.css">
+	<link rel="stylesheet" href="Media/css/style.css">
+	<link rel="stylesheet" href="Media/css/giohang.css">
+	
+	
 
 
 </head>
 
 <body>
+<?php 
+	
+	include_once dirname(__FILE__) . "//Apps/Class/SanPham.php";
+	require_once dirname(__FILE__) . "//Apps/Libs/Database.php"; ?>
 	<?php
 	include "header.php";
 	?>
@@ -69,8 +73,8 @@
 							$item[] = $key;
 						}
 						$str = implode("','", $item);
-						include "../Apps/Libs/DBConnection.php";
-						$sql = "select * from db_ghtshop.chitietsp where masp in ('$str')";
+					
+						$sql = "select * from id12041544_db_ghtshop.chitietsp where masp in ('$str')";
 						$query = $pdo->prepare($sql);
 						$query->execute();
 						$data = $query->FetchAll();
@@ -109,10 +113,10 @@
 	include "footer.php"
 	?>
 	<!-- Latest jQuery form server -->
-	<script src="../Media/js/jquery.min.js"></script>
+	<script src="/Media/js/jquery.min.js"></script>
 
 	<!-- Bootstrap JS form CDN -->
-	<script src="../Media/js/bootstrap.min.js"></script>
+	<script src="/Media/js/bootstrap.min.js"></script>
 
 </body>
 

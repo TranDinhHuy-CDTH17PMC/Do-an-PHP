@@ -45,18 +45,18 @@
 					$hd = new Database();
 					//Danh sách sản phẩm bán chạy nhất theo tổng giá trị, tổng sản phẩm
 					$query = "select sp.LINKANH,sp.TENSP,ct.masp,sum(ct.soluong) as tongsp,sp.
-					GIAMOI*sum(ct.soluong) as tonggiatri from db_ghtshop.chitiethoadon ct
-					join db_ghtshop.chitietsp sp on ct.masp = sp.masp group by 
+					GIAMOI*sum(ct.soluong) as tonggiatri from id12041544_db_ghtshop.chitiethoadon ct
+					join id12041544_db_ghtshop.chitietsp sp on ct.masp = sp.masp group by 
 					ct.masp order by ct.soluong desc  limit 10";
 					$rowsdata = $hd->thuchien_query($query);//Danh sách sản phẩm 
 					//Tổng doanh thu của cửa hàng
 					$query = "select sum(tongtien) as doanhthu, count(mahd) as tonghd 
-					from db_ghtshop.hoadon";
+					from id12041544_db_ghtshop.hoadon";
 					$doanhthu = $hd->lay_mot_hang($query);//Số liệu cụ thể
-					$query_sp = "select sum(soluong) as sanpham from db_ghtshop.chitiethoadon";
+					$query_sp = "select sum(soluong) as sanpham from id12041544_db_ghtshop.chitiethoadon";
 					$ct = $hd->lay_mot_hang($query_sp);
 					//Số lượng hàng còn lại trong kho
-					$query_hangton = "select sum(soluong) as tonkho from db_ghtshop.chitietsp";
+					$query_hangton = "select sum(soluong) as tonkho from id12041544_db_ghtshop.chitietsp";
 					$tonkho = $hd->lay_mot_hang($query_hangton);
 					foreach ($rowsdata as $row) {
 
@@ -65,7 +65,7 @@
 						<tr>
 
 							<td>
-								<img src="<?php echo $row['LINKANH'] ?>" width="10%">
+								<img src="<?php echo "../".$row['LINKANH'] ?>" width="10%">
 							</td>
 							<td>
 								<?php echo $row['TENSP'] ?>

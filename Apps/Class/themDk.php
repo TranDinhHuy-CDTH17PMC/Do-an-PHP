@@ -33,7 +33,7 @@ function thongbao($loaithongbao,$loinhan,$link = null){
 		
 
 		if(!isset($error)){
-			$data_taikhoan = $pdo->prepare("select username from db_ghtshop.taikhoan where username ='$tendk'");
+			$data_taikhoan = $pdo->prepare("select username from id12041544_db_ghtshop.taikhoan where username ='$tendk'");
 	
 			$data_taikhoan->execute();
 			$user = $data_taikhoan->fetchAll();
@@ -41,7 +41,7 @@ function thongbao($loaithongbao,$loinhan,$link = null){
 				$error = 'Tài khoản này đã tồn tại';
 			}
 			else{
-				$sqlInsert ="Insert into db_ghtshop.taikhoan (username,password,email) 
+				$sqlInsert ="Insert into id12041544_db_ghtshop.taikhoan (username,password,email) 
 				values ('$tendk','$mk','$email')";
 				$data_taikhoan = $pdo->prepare($sqlInsert);
 				$data_taikhoan->execute();

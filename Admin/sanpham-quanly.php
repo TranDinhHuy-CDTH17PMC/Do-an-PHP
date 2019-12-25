@@ -18,7 +18,7 @@
 
 <body>
 	<?php include("admin-header.php");
-	include("sua.php");
+	require_once dirname(__FILE__)."/sua.php";
 	require_once dirname(__FILE__) . "/../Apps/Class/SanPham.php";
 	require_once dirname(__FILE__) . "/../Apps/Libs/Database.php"
 	?>
@@ -32,7 +32,7 @@
 				<?php $db = new Database();
 				isset($error)?$db->thongbao("danger",$error):false ?>
 				
-				<form action="sanpham-quanly" class="search-form" method="post" name="timkiem">
+				<form action="sanpham-quanly.php" class="search-form" method="post" name="timkiem">
 					<div class="col-md-12">
 						 
 						<div class="form-group has-feedback">
@@ -107,8 +107,8 @@
 
 					<?php
 					include_once("../Apps/Libs/DBConnection.php");
-					$sqlSelectAll = "select * from db_ghtshop.chitietsp ct join 
-						db_ghtshop.nhacungcap cc on ct.mancc = cc.manhacungcap";
+					$sqlSelectAll = "select * from id12041544_db_ghtshop.chitietsp ct join 
+						id12041544_db_ghtshop.nhacungcap cc on ct.mancc = cc.manhacungcap";
 					$data = $pdo->prepare($sqlSelectAll);
 					$data->execute();
 					$listProcduct = $data->fetchAll();
@@ -122,7 +122,7 @@
 							<form action="" method="post" enctype="multipart/form-data" class="form-editsp">
 								<tr>
 
-									<td><img src="<?php echo $row['LINKANH'] ?>" width="100px" height="100px"></td>
+									<td><img src="<?php echo "../".$row['LINKANH'] ?>" width="100px" height="100px"></td>
 									<td><?php echo $row['TENSP'] ?></td>
 									<td><?php echo $row['MASP'] ?></td>
 									<td><?php echo $row['SOLUONG'] ?></td>

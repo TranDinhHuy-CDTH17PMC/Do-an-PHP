@@ -6,20 +6,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>GHT shoping</title>
 
-	<link rel="stylesheet" href="../Media/css/bootstrap.min.css">
-	<link rel="stylesheet" href="../Media/css/font-awesome.min.css">
-	<link rel="stylesheet" href="../Media/css/owl.carousel.css">
-	<link rel="stylesheet" href="../Media/css/responsive.css">
-	<link rel="stylesheet" href="../Media/css/style.css">
-	<link rel="stylesheet" href="../Media/css/chitiet.css">
+	<link rel="stylesheet" href="Media/css/bootstrap.min.css">
+	<link rel="stylesheet" href="Media/css/font-awesome.min.css">
+	<link rel="stylesheet" href="Media/css/owl.carousel.css">
+	<link rel="stylesheet" href="Media/css/responsive.css">
+	<link rel="stylesheet" href="Media/css/style.css">
+	<link rel="stylesheet" href="Media/css/chitiet.css">
 
 </head>
 
 <body onload="load()">
 	<!--Nav-->
 	<?php
-	require_once dirname(__FILE__) . "/../Apps/Class/SanPham.php";
-	include "../Apps/Libs/DBConnection.php";
+	require_once dirname(__FILE__) . "/Apps/Class/SanPham.php";
+	include "Apps/Libs/DBConnection.php";
 	include "header.php";
 	include "menu.php";
 	?>
@@ -31,7 +31,7 @@
 			//Lấy mã hóa đơn thông qua URL của sản phẩm tương ứng
 			$MASP = $_GET['masp'];
 			//Lấy dữ liệu của sản phẩm tương ứng với Mã sản phẩm
-			$result = $pdo->prepare("select * from db_ghtshop.chitietsp WHERE MASP='$MASP'");
+			$result = $pdo->prepare("select * from id12041544_db_ghtshop.chitietsp WHERE MASP='$MASP'");
 			$result->execute();
 			$rowsdata = $result->fetchALL();
 			foreach ($rowsdata as $data) {
@@ -63,7 +63,7 @@
 		<hr />
 		<?php
 		$MASP = $_GET['masp'];
-		$result = $pdo->prepare("select * from db_ghtshop.chitietsp WHERE MASP='$MASP'");
+		$result = $pdo->prepare("select * from id12041544_db_ghtshop.chitietsp WHERE MASP='$MASP'");
 		$result->execute();
 		$rowsdata = $result->fetchALL();
 		foreach ($rowsdata as $data) {
@@ -100,11 +100,11 @@
 				<div class="tableparamater">
 					<h2>Thông số kỹ thuật</h2>
 					<?php
-					include "../Apps/Libs/DBConnection.php";
+					include "Apps/Libs/DBConnection.php";
 
 
 					$result = $pdo->prepare("select * 
-									from db_ghtshop.thongsokythuat
+									from id12041544_db_ghtshop.thongsokythuat
 									WHERE thongsokythuat.masp='sp8'");
 					$result->execute();
 					$rowsdata = $result->fetchALL();
@@ -218,20 +218,20 @@
 	<!-- Latest jQuery form server -->
 
 	<!-- jQuery sticky menu -->
-	<script src="../Media/js/jquery.min.js"></script>
+	<script src="Media/js/jquery.min.js"></script>
 
 	<!-- Bootstrap JS form CDN -->
-	<script src="../Media/js/bootstrap.min.js"></script>
+	<script src="Media/js/bootstrap.min.js"></script>
 
 	<!-- jQuery sticky menu -->
-	<script src="../Media/js/owl.carousel.min.js"></script>
-	<script src="../Media/js/jquery.sticky.js"></script>
+	<script src="Media/js/owl.carousel.min.js"></script>
+	<script src="Media/js/jquery.sticky.js"></script>
 
 	<!-- jQuery easing -->
-	<script src="../Media/js/jquery.easing.1.3.min.js"></script>
+	<script src="Media/js/jquery.easing.1.3.min.js"></script>
 
 	<!-- Main Script -->
-	<script src="../Media/js/main.js"></script>
+	<script src="Media/js/main.js"></script>
 
 	<!-- Slider -->
 

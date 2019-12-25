@@ -1,5 +1,5 @@
 <?php
-include_once( "../Apps/Libs/Database.php" );
+
 
 class SanPham {
 	private $linkanh;
@@ -55,13 +55,13 @@ class SanPham {
 
 	function hienthi_sanpham_moi() {
 		$db = new Database();
-		$query_select = "select * from db_ghtshop.chitietsp where xoa = 1 order by masp limit 8";
+		$query_select = "select * from id12041544_db_ghtshop.chitietsp where xoa = 1 order by masp limit 8";
 		return $db->thuchien_query($query_select);
 
 	}
 	function hienthi_sanpham_phobien() {
 		$db = new Database();
-		$query_select = "select * from db_ghtshop.chitietsp where xoa = 1 order by masp limit 10,8";
+		$query_select = "select * from id12041544_db_ghtshop.chitietsp where xoa = 1 order by masp limit 10,8";
 		return $db->thuchien_query($query_select);
 
 	}
@@ -82,7 +82,7 @@ class SanPham {
 		if ( isset( $_POST[ 'search' ] ) ) {
 			global $pdo;
 			//Lệnh sql  tìm kiếm 
-			$query = "select * from db_ghtshop.chitietsp where  tensp like '%$search%'";
+			$query = "select * from id12041544_db_ghtshop.chitietsp where  tensp like '%$search%'";
 			$result1 = $pdo->prepare( $query );
 			//kết nối biến với giá trị
 
@@ -124,8 +124,8 @@ class SanPham {
 			$dieu_kien[]= "giamoi >= {$gia_tri['giadau']}";
 		}
 	//Lệnh truy vấn dữ liệu
-		$query_search = "select * from db_ghtshop.chitietsp ct join 
-		db_ghtshop.nhacungcap cc on ct.mancc = cc.manhacungcap";
+		$query_search = "select * from id12041544_db_ghtshop.chitietsp ct join 
+		id12041544_db_ghtshop.nhacungcap cc on ct.mancc = cc.manhacungcap";
 		if($dieu_kien){
 			$query_search.= ' WHERE '.implode(' AND ',$dieu_kien);
 			
@@ -147,7 +147,7 @@ class SanPham {
 		} else
 		if ( $giacuoi > $giadau ) {
 			if ( is_int( $giadau )or is_int( $giacuoi ) ) {
-				$query_search = "select * from db_ghtshop.chitietsp where
+				$query_search = "select * from id12041544_db_ghtshop.chitietsp where
 				 giamoi >= $giadau and giamoi <= $giacuoi";
 
 				$rowdata = $db->thuchien_query( $query_search );
@@ -285,7 +285,7 @@ class SanPham {
 			$noidung = $_POST['noidung'];
 			$trangthai = 1;
 			$db = new Database();
-			$sql_query = "Insert into db_ghtshop.binhluan(makh,masp,noidung,trangthai) values('$makh','$masp','$noidung',$trangthai)";
+			$sql_query = "Insert into id12041544_db_ghtshop.binhluan(makh,masp,noidung,trangthai) values('$makh','$masp','$noidung',$trangthai)";
 			$db->thuchien_lenhsql($sql_query);
 			if ($db->rowCount > 0) {
 				echo  "Thêm thành công";

@@ -119,7 +119,7 @@ class Khachhang
 	{
 		if (isset($_SESSION['username'])) {
 			$username = $_SESSION['username'];
-			$query = "Select * from db_ghtshop.Khachhang where username = '$username'";
+			$query = "Select * from id12041544_db_ghtshop.Khachhang where username = '$username'";
 			$db = new Database();
 			return $db->thuchien_query($query);
 		}
@@ -129,7 +129,7 @@ class Khachhang
 	public function them_Dulieu_vao_db()
 	{
 
-		$query_insert = "INSERT into db_ghtshop.Khachhang
+		$query_insert = "INSERT into id12041544_db_ghtshop.Khachhang
 		(tenkh,makh,diachi,sdt,gioitinh,username,cmnd)
 		values(N'$this->tenkh','$this->makh',N'$this->diachi',
 		'$this->sdt',N'$this->gioitinh','$this->username','$this->cmnd')";
@@ -149,7 +149,7 @@ class Khachhang
 	function capnhat_dulieu_vao_db()
 	{
 		//Lệnh Update của sql
-		$query_update = "update db_ghtshop.khachhang set tenkh = N'$this->tenkh',
+		$query_update = "update id12041544_db_ghtshop.khachhang set tenkh = N'$this->tenkh',
 		cmnd = $this->cmnd,sdt = '$this->sdt',diachi = N'$this->diachi',
 		gioitinh = N'$this->gioitinh' WHERE  makh = '$this->makh' and username= '$this->username'";
 		$db = new Database();

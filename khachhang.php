@@ -5,11 +5,11 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Thông tin khách hàng</title>
-	<link rel="stylesheet" href="../Media/css/bootstrap.min.css">
-	<link rel="stylesheet" href="../Media/css/font-awesome.min.css">
-	<link rel="stylesheet" href="../Media/css/owl.carousel.css">
-	<link rel="stylesheet" href="../Media/css/responsive.css">
-	<link rel="stylesheet" href="../Media/css/style.css">
+	<link rel="stylesheet" href="Media/css/bootstrap.min.css">
+	<link rel="stylesheet" href="Media/css/font-awesome.min.css">
+	<link rel="stylesheet" href="Media/css/owl.carousel.css">
+	<link rel="stylesheet" href="Media/css/responsive.css">
+	<link rel="stylesheet" href="Media/css/style.css">
 	<style>
 		.row.content {
 			height: 1500px
@@ -42,8 +42,8 @@
 </head>
 
 <body>
-	<?php include_once "../Apps/Class/KhachHang.php";
-	require_once "../Apps/Libs/Database.php";
+	<?php include_once "Apps/Class/KhachHang.php";
+	require_once "Apps/Libs/Database.php";
 		include_once "header.php";
 	
 	?>
@@ -252,23 +252,23 @@
 
 
 	<?php include "footer.php";?>
-	<script src="../Media/js/jquery.min.js"></script>
+	<script src="Media/js/jquery.min.js"></script>
 
 	<!-- Bootstrap JS form CDN -->
-	<script src="../Media/js/bootstrap.min.js"></script>
+	<script src="Media/js/bootstrap.min.js"></script>
 
 	<!-- jQuery sticky menu -->
-	<script src="../Media/js/owl.carousel.min.js"></script>
-	<script src="../Media/js/jquery.sticky.js"></script>
+	<script src="Media/js/owl.carousel.min.js"></script>
+	<script src="Media/js/jquery.sticky.js"></script>
 
 	<!-- jQuery easing -->
-	<script src="../Media/js/jquery.easing.1.3.min.js"></script>
+	<script src="Media/js/jquery.easing.1.3.min.js"></script>
 
 	<!-- Main Script -->
-	<script src="../Media/js/main.js"></script>
+	<script src="Media/js/main.js"></script>
 
 	<!-- Slider -->
-	<script type="text/javascript" src="../Media/js/bxslider.min.js"></script>
-	<script type="text/javascript" src="../Media/js/script.slider.js"></script>
+	<script type="text/javascript" src="Media/js/bxslider.min.js"></script>
+	<script type="text/javascript" src="Media/js/script.slider.js"></script>
 </body>
 </html>

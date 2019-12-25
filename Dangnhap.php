@@ -1,7 +1,7 @@
 <div class="loginmodal-container">
 	<h1>ĐĂNG NHẬP</h1><br>
-	<?php include_once dirname(__FILE__)."/../Apps/cookie.php";
-	require_once "../Apps/Class/TaiKhoan.php";
+	<?php include_once dirname(__FILE__)."/Apps/cookie.php";
+	require_once dirname(__FILE__)."/Apps/Class/TaiKhoan.php";
 
 	
 	?>

@@ -40,7 +40,7 @@ function tao_link($url,$loc = array()){
 }
 // Hàm tạo URL
 function base_url($uri = ''){
-    return 'http://localhost/DoAnWeb/'.$uri;
+    return 'http://localhost:8080/Mobile-Shop-Project/'.$uri;
 }
 function thongbao($loaithongbao,$loinhan,$link = null){
     echo '<div class="alert alert-'.$loaithongbao.' alert-dismissible">

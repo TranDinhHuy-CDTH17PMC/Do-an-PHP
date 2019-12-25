@@ -42,13 +42,13 @@
 
 					<?php 	
                     $hd = new Database();
-					$query = "select mahd,makh,ngaylap,sum(tongtien) as tongtien from db_ghtshop.hoadon group by  makh  order by tongtien  desc limit 5";
+					$query = "select mahd,makh,ngaylap,sum(tongtien) as tongtien from id12041544_db_ghtshop.hoadon group by  makh  order by tongtien  desc limit 5";
 					$rowsdata = $hd->thuchien_query($query);
-					$query = "select sum(tongtien) as doanhthu, count(mahd) as tonghd from db_ghtshop.hoadon";
+					$query = "select sum(tongtien) as doanhthu, count(mahd) as tonghd from id12041544_db_ghtshop.hoadon";
 					$doanhthu = $hd->lay_mot_hang($query);
-					$query_sp = "select sum(soluong) as sanpham from db_ghtshop.chitiethoadon";
+					$query_sp = "select sum(soluong) as sanpham from id12041544_db_ghtshop.chitiethoadon";
 					$ct = $hd->lay_mot_hang($query_sp);
-					$query_hangton = "select sum(soluong) as tonkho from db_ghtshop.chitietsp";
+					$query_hangton = "select sum(soluong) as tonkho from id12041544_db_ghtshop.chitietsp";
 					$tonkho = $hd->lay_mot_hang($query_hangton);
 					foreach($rowsdata as $row){
 					

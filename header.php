@@ -1,8 +1,8 @@
-<?php require_once dirname(__FILE__)."/../Apps/Libs/Session.php"?>
-<?php $session = new Session(); ?>
+<?php require_once dirname(__FILE__)."/Apps/Libs/Session.php";
+include_once dirname(__FILE__). "/Apps/Libs/DBConnection.php";?>
 <?php
 
-
+$session = new Session(); 
 if ( isset( $_GET[ 'masp' ]) and isset($_GET['chucnang']) )  {
     if($_GET['chucnang']==1)
     $session->addcart( $_GET[ 'masp' ] );
@@ -71,9 +71,9 @@ $soluong = $session->ktrSession();?>
 <div class="">
     <div class="container">
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-5">
                 <div class="logo">
-                    <h1><a href="index.php"><img src="../Media/img/logoGHT.png" width="210px"></a></h1>
+                    <h1><a href="index.php"><img src="Media/img/logoGHT.png" width="210px"></a></h1>
                 </div>
             </div>
         

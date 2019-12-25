@@ -6,7 +6,7 @@
 			else
 				echo "" ?></h1>
 	<?php
-	require_once dirname(__FILE__) . "/../Apps/Class/NguoiDung.php";
+	require_once dirname(__FILE__) . "/Apps/Class/NguoiDung.php";
 	$man = new NguoiDung();
 	?>
 

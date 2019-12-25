@@ -4,8 +4,7 @@
 			<a class="navbar-brand" href="index.php">GHT-Shoping</a>
 		</div>
 		<ul class="nav navbar-nav">
-			<li><a href="index.php"><i class="glyphicon glyphicon-home"></i> Trang chủ</a>
-			</li>
+			
 			<li class="dropdown">
 				<a class="dropdown-toggle" data-toggle="dropdown" href="trangtimkiem.php">
 					<i class="glyphicon glyphicon-search"></i> Tìm kiếm
@@ -21,8 +20,7 @@
 			</li>
 			<li><a href="sanpham.php"><i class="glyphicon glyphicon-phone"></i> Sản phẩm</a>
 			</li>
-			<li><a href="lienhe.php"><i class="glyphicon glyphicon-send"></i> Liên hệ</a>
-			</li>
+			
 		</ul>
 		<div class="col-md-3">
 			<form action="index.php" class="search-form" method="post">

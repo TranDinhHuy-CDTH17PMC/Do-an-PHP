@@ -71,7 +71,7 @@ class HoaDon
 	{
 		$db = new Database();
 		$username = $_SESSION['username'];
-		$query_kh = "select * from db_ghtshop.khachhang k join db_ghtshop.taikhoan t on 
+		$query_kh = "select * from id12041544_db_ghtshop.khachhang k join id12041544_db_ghtshop.taikhoan t on 
 			 t.username = k.username  where t.username = '$username'";
 		$kh = $db->thuchien_query($query_kh);
 		return $kh;
@@ -79,7 +79,7 @@ class HoaDon
 	public function lay_dulieu_khachhang_tiemnang($makh)
 	{
 		$db = new Database();
-		$query_kh = "select makh,diachi,tenkh from db_ghtshop.khachhang where makh = '$makh'";
+		$query_kh = "select makh,diachi,tenkh from id12041544_db_ghtshop.khachhang where makh = '$makh'";
 		$kh = $db->thuchien_query($query_kh);
 		return $kh;
 	}
@@ -105,7 +105,7 @@ class HoaDon
 		$this->tongtien = $_POST['tongtien'];
 		//Tạo mã hóa đơn tự động
 		$db = new Database();
-		$query = 'select count(*) as dem from db_ghtshop.hoadon';
+		$query = 'select count(*) as dem from id12041544_db_ghtshop.hoadon';
 		$d = $db->thuchien_query($query);
 		$stt = $d[0]['dem'];
 		$stt += 1;
@@ -115,7 +115,7 @@ class HoaDon
 	public function them_dulieu_vao_db()
 	{
 		$db = new Database();
-		$query_insert = "INSERT INTO db_ghtshop.hoadon(makh,ngaylap,tongtien,mahd,tongsp,trangthai,diachi)
+		$query_insert = "INSERT INTO id12041544_db_ghtshop.hoadon(makh,ngaylap,tongtien,mahd,tongsp,trangthai,diachi)
 		 values('$this->makh','$this->ngaylap',$this->tongtien,'$this->mahd',$this->tongsp,$this->trangthai,'$this->diachi')";
 		$db->thuchien_lenhsql($query_insert);
 	}
@@ -134,7 +134,7 @@ class HoaDon
 			if (isset($_POST['mahd'])) {
 				$m = $_POST['mahd'];//Lấy mã hóa đơn muốn thay đổi
 				//Lệnh thay đổi trạng thái của hóa đơn
-				$query = "UPDATE db_ghtshop.hoadon SET trangthai = 1 where mahd = '$m'";
+				$query = "UPDATE id12041544_db_ghtshop.hoadon SET trangthai = 1 where mahd = '$m'";
 				$db->thuchien_lenhsql($query);//Truy vẫn cơ sở dữ liệu
 				echo '<div class="alert alert-success alert-dismissible">
 				<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
@@ -145,7 +145,7 @@ class HoaDon
 		if (isset($_POST['xoa_hd'])) {
 			if (isset($_POST['mahd'])) {
 				$m = $_POST['mahd'];
-				$query = "UPDATE db_ghtshop.hoadon SET trangthai = 0 where mahd = '$m'";
+				$query = "UPDATE id12041544_db_ghtshop.hoadon SET trangthai = 0 where mahd = '$m'";
 				$db->thuchien_lenhsql($query);
 				echo '<div class="alert alert-danger alert-dismissible">
 				<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
@@ -156,7 +156,7 @@ class HoaDon
 		if (isset($_POST['huy_duyet'])) {
 			if (isset($_POST['mahd'])) {
 				$m = $_POST['mahd'];
-				$query = "UPDATE db_ghtshop.hoadon SET trangthai = 2 where mahd = '$m'";
+				$query = "UPDATE id12041544_db_ghtshop.hoadon SET trangthai = 2 where mahd = '$m'";
 				$db->thuchien_lenhsql($query);
 				echo '<div class="alert alert-info alert-dismissible">
 				<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
@@ -191,7 +191,7 @@ class HoaDon
 		if (isset($_POST['mua'])) {
 			$this->nhapdulieu();
 			//Kiểm tra tồn tại của mã hóa đơn
-			$query_ktr = "Select * from db_ghtshop.hoadon where mahd = '$this->mahd'";
+			$query_ktr = "Select * from id12041544_db_ghtshop.hoadon where mahd = '$this->mahd'";
 			$ktr = $db->thuchien_query($query_ktr);
 			if (empty($ktr)) {
 				//Kiểm tra mã sản phẩm và số lượng sản phẩm
@@ -227,7 +227,7 @@ class HoaDon
 			if (isset($_POST['diachi']))
 				$this->diachi = $_POST['diachi'];
 		}
-		$query = "update db_ghtshop.hoadon set diachi = '$this->diachi' where mahd = '$this->mahd'";
+		$query = "update id12041544_db_ghtshop.hoadon set diachi = '$this->diachi' where mahd = '$this->mahd'";
 		$db = new Database();
 		global $rowCount; //Đếm số dòng sql thực thiện 
 		if (isset($_POST['capnhat_hoadon'])) { //kiểm tra hành động cập nhật
@@ -248,7 +248,7 @@ class HoaDon
 			$tt = $_GET['trangthai'];
 			
 			//Truy vấn cơ sở dữ liệu
-			$query_filter = "select * from db_ghtshop.hoadon where ngaylap =:ngaylap or trangthai=:trangthai ";
+			$query_filter = "select * from id12041544_db_ghtshop.hoadon where ngaylap =:ngaylap or trangthai=:trangthai ";
 			global $pdo;
 			$data = $pdo->prepare($query_filter);
 			$data->bindParam(':ngaylap', $this->ngaylap);
@@ -301,7 +301,7 @@ class ChitietHoadon
 				$item[] = $key;
 			}
 			$str = implode("','", $item);
-			$query_sp = "select * from db_ghtshop.chitietsp where masp in ('$str')";
+			$query_sp = "select * from id12041544_db_ghtshop.chitietsp where masp in ('$str')";
 			$sp = $db->thuchien_query($query_sp);
 			return $sp;
 		} else
@@ -337,19 +337,19 @@ class ChitietHoadon
 	public function lay_dulieu_tu_db()
 	{
 		$db = new Database();
-		$query = "select * from db_ghtshop.chitiethoadon where mahd = '$this->mahd'";
+		$query = "select * from id12041544_db_ghtshop.chitiethoadon where mahd = '$this->mahd'";
 		return $db->thuchien_query($query);
 	}
 	public function lay_chitiet_sanpham()
 	{
-		$query = "select * from db_ghtshop.chitietsp hd join db_ghtshop.chitiethoadon 
+		$query = "select * from id12041544_db_ghtshop.chitietsp hd join id12041544_db_ghtshop.chitiethoadon 
 		ct on hd.masp = ct.masp where mahd = '$this->mahd'";
 		$db = new Database();
 		return $db->thuchien_query($query);
 	}
 	public function them_dulieu_vao_db()
 	{
-		$query = "insert into db_ghtshop.chitiethoadon(masp,mahd,soluong)
+		$query = "insert into id12041544_db_ghtshop.chitiethoadon(masp,mahd,soluong)
 		values( '$this->masp','$this->mahd',$this->soluong)";
 		$db = new Database();
 
