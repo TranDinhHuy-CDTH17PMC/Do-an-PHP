@@ -26,7 +26,7 @@ class Database {
         return $this->dieukien;
     }
     function set_bang($bang){
-        $this->bang = $bang;
+        $this->bang =strtolower($bang);
     }
     function set_dieukien($dieukien){
         $this->dieukien = $dieukien;
